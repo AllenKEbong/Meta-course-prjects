@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr;
+}
+
+header, nav, footer{
+    background-color:rgb(37,3,3);
+    padding: 10px;
+    text-align: center;
+}
+
+header{
+    display: flex;
+}
+nav ul{
+    display: flex;
+    justify-content: left;
+    gap: 80px;
+    list-style: none;
+}
+
+nav a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+    
+}
+nav a:hover{
+    text-decoration: underline;
+    color: yellow;
+}
+
+main{
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+.hero-section{
+    position:relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.background-video{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-content{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background-color: rgba(15, 1, 1,0.1);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+.hero-content h1{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.hero-content p{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.order-button{
+    display: inline-block;
+    background-color: rgb(37, 3, 3);
+    color: white;
+    padding: 12px 20px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s ease
+}
+
+.order-button:hover{
+    background-color: #f4a261;
+}
+.three-columns{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.three-columns article{
+    background-color: rgb(37, 3, 3);
+    padding: 15px;
+    text-align: center;
+    color: white;
+    transition: 0.3s ease;
+}
+.three-columns article:hover{
+    background-color: #f4a261;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    background-color: #f4a261;
+    color: white;
+    text-align: center;
+}
+.social-media-links a{
+color: #3b5998;
+transition: 0.3s ease;
+
+}
+.social-media-links a:hover{
+    color: white;
+}
